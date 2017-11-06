@@ -27,7 +27,7 @@ imshow(gaussian_3x3_sig4_kernel);
 title('3x3 Gaussian filter with mu, sigma = (0, 4)');
 
 % Apply 3x3 and 7x7 gaussian filter on an image. With sigma=1.0, mu=0.0
-origin_img = imread('./Koala.bmp');
+origin_img = imread('./00_Koala.bmp');
 gaussian_3x3x3_kernel = gaussian_2dkernel([3,3],[1,1]);
 gaussian_3x3x3_kernel = reshape(repmat(gaussian_3x3x3_kernel, 1,3), 3, 3, 3);
 gaussian_7x7x3_kernel = gaussian_2dkernel([7,7],[1,1]);
